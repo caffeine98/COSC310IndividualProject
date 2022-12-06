@@ -18,6 +18,15 @@
             android:id="@+id/nav_veiw_report"
             android:icon="@drawable/report_icon"
             android:title="View Report" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/home_icon"
+            android:title="Location" />
+        <item
+            android:id="@+id/nav_add_funds"
+            android:icon="@drawable/cio_ic_paypal_monogram"
+            android:title="Add funds"
+            />
     </group>
 
 
