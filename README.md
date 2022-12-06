@@ -1,4 +1,4 @@
-# Cosc 310 Assignment 3
+# COSC 310 Individual Project
 
 The project is an Android app designed for Coffee shops to help manage their business. The app tracks inventory and sales information to help managers with their daily tasks and provide them with reports to make business decisions.
 
@@ -31,6 +31,11 @@ Classes are organized in the java folder of the app project. These classes are t
 `-- javabucksim
     |-- MainActivity.java
     |-- StatisticsReport.java
+    |-- LocationActivity.java
+    |-- MapsActivity.java
+    |-- MapsActivity2.java
+    |-- PaymentActivity.java
+    |-- PayPalClientIDConfig.java
     |-- listItems
     |   |-- Categories.java
     |   |-- Choices.java
@@ -52,10 +57,20 @@ Classes are organized in the java folder of the app project. These classes are t
         |-- editUsers.java
         `-- settingsActivity.java
 
-5 directories, 19 files
+5 directories, 23 files
 ~~~
 
 
+---
+
+## Features Added for Individual Project
+
+Two additional APIs were added to the project: Google Maps API and the PayPal API
+
+1. Google Maps API
+    - This API will allow users to get the exact location of a coffee shop branch through the app. Different branches can have different locations, so this can help with finding and sending location information to suppliers for delivery.
+1. PayPal API
+    - This API will allow Managers to add funds to their system in order to make inventory purchases. It does so by adding money to the business’s PayPal account.
 ---
 
 ## Features Added for Assignment 3
@@ -69,7 +84,7 @@ Classes are organized in the java folder of the app project. These classes are t
 1. Saving report as a PDF on the device
     - Allows saving of sales and operations report as a PDF on the device's Documents folder when the user clicks the Save Report button. Added PdfBox-Android library (https://github.com/TomRoush/PdfBox-Android) to allow creating and saving PDF files in android.
 1. Auto Order that now orders now inventory
-   - the auto order functionality now updates the database when orders are placed. Also low stock warning integration so that users won't accidentally     double order. 
+   - The auto order functionality now updates the database when orders are placed. Also low stock warning integration so that users won't accidentally     double order. 
 1. Navigation drawer that makes the app more integrated.
    - Allows users to access all the pages with a navigation drawer.
 1. Item details data
