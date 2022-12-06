@@ -319,6 +319,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent intent4 = new Intent(MainActivity.this, reportActivity.class);
                 startActivity(intent4);
                 break;
+            case R.id.nav_location:
+                Intent intent5 = new Intent(MainActivity.this, LocationActivity.class);
+                startActivity(intent5);
+                break;
+            case R.id.nav_add_funds:
+                Intent intent6 = new Intent(MainActivity.this, PaymentActivity.class);
+                startActivity(intent6);
+                break;
         }
         return true;
     }
